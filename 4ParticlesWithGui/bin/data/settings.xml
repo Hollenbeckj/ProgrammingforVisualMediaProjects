@@ -1,0 +1,10 @@
+<group>
+	<Global_Gravity_X>0</Global_Gravity_X>
+	<Global_Gravity_Y>0.25</Global_Gravity_Y>
+	<Background_Color>0, 148, 173, 255</Background_Color>
+	<Big_Circle_Color>186, 173, 0, 166</Big_Circle_Color>
+	<Small_Circle_Color>0, 97, 179, 255</Small_Circle_Color>
+	<Square_Color>0, 200, 0, 174</Square_Color>
+	<Big_Square_Color>186, 0, 0, 174</Big_Square_Color>
+<group/>
+</group>
