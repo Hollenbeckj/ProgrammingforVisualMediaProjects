@@ -130,25 +130,25 @@ void ofApp::draw(){
     
     for(int i = 0; i < BigCircles.size(); i++)
     {
-        ofSetColor(bigCircleColor);
+        ofSetColor(bigCircleColor);//set the big circle color to be what the big circle color slider is
         BigCircles[i].draw();
     }
     
     for(int i = 0; i < SmallCircles.size(); i++)
     {
-        ofSetColor(smallCircleColor);
+        ofSetColor(smallCircleColor);//set the small circle color to be what the small circle color slider is
         SmallCircles[i].draw();
     }
     
     for(int i = 0; i < squares.size(); i++)
     {
-        ofSetColor(squareColor);
+        ofSetColor(squareColor);//set the square color to be what the square color slider is
         squares[i].draw();
     }
     
     for(int i = 0; i < BigSquares.size(); i++)
     {
-        ofSetColor(bigSquareColor);
+        ofSetColor(bigSquareColor);//set the big square color to be what the big square color slider is
         BigSquares[i].draw();
     }
 
@@ -182,7 +182,7 @@ void ofApp::createNewBigSquare()
 
 void ofApp::checkBigParticles()
 {
-        if(BigCircles.size() == maxBigCircles)
+        if(BigCircles.size() == maxBigCircles)//if the size of the Vector is equal to the maximum set size then erase the oldest
         {
             BigCircles.erase(BigCircles.begin());//erase the oldest
         }
@@ -192,7 +192,7 @@ void ofApp::checkSmallParticles()
 {
     if(SmallCircles.size() == maxSmallCircles)
     {
-        SmallCircles.erase(SmallCircles.begin());
+        SmallCircles.erase(SmallCircles.begin());//erase the oldest
     }
 
 }

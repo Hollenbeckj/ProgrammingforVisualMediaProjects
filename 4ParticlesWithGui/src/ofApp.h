@@ -36,22 +36,27 @@ public:
     void checkBigSquareParticles();
     
     //Base variables
+    //RGB values for background
     int backgroundColorR;
     int backgroundColorG;
     int backgorundColorB;
     
+    //RGB values for big Circles
     int bigCircleColorR;
     int bigCircleColorG;
     int bigCircleColorB;
     
+    //RGB values small circles
     int smallCircleR;
     int smallCircleG;
     int smallCircleB;
     
+    //RGB values for squares
     int squareR;
     int squareG;
     int squareB;
     
+    //RGB values for big squares
     int bigSquareR;
     int bigSquareG;
     int bigSquareB;
@@ -59,16 +64,14 @@ public:
     float globalGravityX;
     float globalGravityY;
     
-    int maxBigCircles;   //maximum number of particles
+    int maxBigCircles;   //maximum number of particles for all the vectors
     int maxSmallCircles;
     int maxSquares;
     int maxBigSquares;
     
     // physics forces
-    ofPoint wind;   //ofPoint for the wind force
-    ofPoint gravity;    //ofPoint for some fake gravity
-    
-    ofVec2f smallCircleRotation;
+    ofPoint wind;//of Point for wind
+    ofPoint gravity;//of point for gravity
 
     //vectors
     vector<bigCircle> BigCircles;
@@ -81,10 +84,10 @@ public:
     ofxPanel gui;
     ofxColorSlider backgroundColor; // slider for background color
     ofxColorSlider bigCircleColor; // slider for big Circle particles color
-    ofxColorSlider smallCircleColor;
-    ofxFloatSlider GravityX;
-    ofxFloatSlider GravityY;
-    ofxColorSlider squareColor;
-    ofxColorSlider bigSquareColor;
+    ofxColorSlider smallCircleColor;//slider for small circle color
+    ofxFloatSlider GravityX;//gravity value on the X axis
+    ofxFloatSlider GravityY;//gravity value on the Y axis
+    ofxColorSlider squareColor;//color slider for squares
+    ofxColorSlider bigSquareColor;//color slider for big squares
     
 };
